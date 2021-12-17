@@ -439,6 +439,8 @@ Array.from(new Array(9 + 1).keys()).slice(0)
 
 ## 迭代器和生成器
 
+### 1.迭代器
+
 ## **forEach不支持break**
 
 forEach并不支持break操作，使用break会导致报错。forEach跳出循环结合try catch操作。
