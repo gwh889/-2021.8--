@@ -1,0 +1,169 @@
+html,
+body {
+  font-size: 16px !important;
+}
+.el-button {
+  width: 84px;
+  height: 36px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  padding: 0px 14px 0px 14px;
+}
+.el-button--default {
+  border: 1px solid #1e90ff;
+  color: #1e90ff;
+}
+/* 提示信息 */
+.atooltip {
+  background: #f3f3f3 !important;
+  color: #999999 !important;
+}
+.atooltip.el-tooltip__popper[x-placement^="bottom"] .popper__arrow {
+  border-bottom-color: #f3f3f3 !important;
+}
+.atooltip.el-tooltip__popper[x-placement^="bottom"] .popper__arrow:after {
+  border-bottom-color: #f3f3f3 !important;
+}
+/* app提示信息 */
+.tooltipInfo {
+  width: 202px;
+  background: #fff !important;
+  box-shadow: 0px 0px 10px rgba(124, 124, 124, 0.2);
+  font-size: 14px;
+  line-height: 24px;
+  color: #333 !important;
+}
+.tooltipInfo.el-tooltip__popper[x-placement^="bottom"] .popper__arrow ,.tooltipInfo.el-tooltip__popper[x-placement^="bottom"] .popper__arrow:after{
+  border-bottom-color: #fff !important;
+}
+.tooltipInfo.el-tooltip__popper[x-placement^="top"] .popper__arrow ,.tooltipInfo.el-tooltip__popper[x-placement^="top"] .popper__arrow:after {
+  border-top-color: #fff !important;
+}
+/* 表格 */
+.el-table {
+  border: 1px solid #f9f9f9;
+  font-family: Source Han Sans CN;
+}
+.el-table th {
+  background: #f9f9f9;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #444444;
+}
+/* 弹出框 */
+.el-dialog .el-dialog__header {
+  border-bottom: 2px solid #e2e0e0;
+  padding: 20px 50px 10px;
+}
+.el-dialog__headerbtn {
+  right: 50px;
+}
+.el-dialog .el-dialog__body {
+  padding: 30px 140px 31px 140px;
+}
+.el-dialog .el-dialog__footer {
+  text-align: center;
+  padding-bottom: 46px;
+}
+.el-dialog .el-dialog__footer .el-button:nth-child(1) {
+  margin-right: 100px;
+}
+/* 删除弹窗 */
+.removeDialog .el-dialog .el-dialog__body {
+  padding: 30px 81px 40px 81px;
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  /* vertical-align: -0.15em; */
+  vertical-align: -0.6em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.shengchangongdan {
+  background: url(../images/icon/shengchangongdan.png) no-repeat center center;
+}
+.paichanjihua {
+  background: url(../images/icon/paichanjihua.png) no-repeat center center;
+}
+.baozhuangwangong {
+  background: url(../images/icon/baozhuangwangong.png) no-repeat center center;
+}
+.cajiqiguanli {
+  background: url(../images/icon/cajiqiguanli.png) no-repeat center center;
+}
+.chejianguanli {
+  background: url(../images/icon/chejianguanli.png) no-repeat center center;
+}
+.chuansha {
+  background: url(../images/icon/chuansha.png) no-repeat center center;
+}
+.chuashagaijibaobiao {
+  background: url(../images/icon/chuashagaijibaobiao.png) no-repeat center
+    center;
+}
+.gaiji {
+  background: url(../images/icon/gaiji.png) no-repeat center center;
+}
+.gongdanjiankong {
+  background: url(../images/icon/gongdanjiankong.png) no-repeat center center;
+}
+.jihuabaoyang {
+  background: url(../images/icon/jihuabaoyang.png) no-repeat center center;
+}
+.jitaifenzu {
+  background: url(../images/icon/jitaifenzu.png) no-repeat center center;
+}
+.kaijigongshi {
+  background: url(../images/icon/kaijigongshi.png) no-repeat center center;
+}
+.paichanjihua {
+  background: url(../images/icon/paichanjihua.png) no-repeat center center;
+}
+.piliangshengchan {
+  background: url(../images/icon/piliangshengchan.png) no-repeat center center;
+}
+.quanxianguanli {
+  background: url(../images/icon/quanxianguanli.png) no-repeat center center;
+}
+.shebeibaoyang {
+  background: url(../images/icon/shebeibaoyang.png) no-repeat center center;
+}
+.shebeiguzhang {
+  background: url(../images/icon/shebeiguzhang.png) no-repeat center center;
+}
+.shebeijiankong1 {
+  background: url(../images/icon/shebeijiankong1.png) no-repeat center center;
+}
+.shebeijiankong2 {
+  background: url(../images/icon/shebeijiankong2.png) no-repeat center center;
+}
+.shebeikanban {
+  background: url(../images/icon/shebeikanban.png) no-repeat center center;
+}
+.shebeitaizhang {
+  background: url(../images/icon/shebeitaizhang.png) no-repeat center center;
+}
+.shengchanbaobiao {
+  background: url(../images/icon/shengchanbaobiao.png) no-repeat center center;
+}
+.shengchanpaigong {
+  background: url(../images/icon/shengchanpaigong.png) no-repeat center center;
+}
+.shishibaoyang {
+  background: url(../images/icon/shishibaoyang.png) no-repeat center center;
+}
+.shoujian {
+  background: url(../images/icon/shoujian.png) no-repeat center center;
+}
+.yuangongbaogong {
+  background: url(../images/icon/yuangongbaogong.png) no-repeat center center;
+}
+.zuzhijiagou {
+  background: url(../images/icon/zuzhijiagou.png) no-repeat center center;
+}
+.jiashicang {
+  background: url(../images/icon/jiashicang.png) no-repeat center center;
+}

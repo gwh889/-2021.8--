@@ -1,0 +1,185 @@
+{
+  "success": 1,
+  "msg": "操作成功",
+  "body": {
+    "OrderNum_Year_REAL": 0,
+    "all_user_daka_count_list": [],
+    "SEVEN_DAY_OUTPUT": [
+      {
+        "total": 1199.10,
+        "days": "2021-01-05"
+      },
+      {
+        "total": 3924.53,
+        "days": "2021-01-04"
+      },
+      {
+        "total": 5004.39,
+        "days": "2021-01-03"
+      },
+      {
+        "total": 6713.80,
+        "days": "2021-01-02"
+      },
+      {
+        "total": 0.00,
+        "days": "2021-01-01"
+      },
+      {
+        "total": 0.00,
+        "days": "2020-12-31"
+      },
+      {
+        "total": 0.00,
+        "days": "2020-12-30"
+      }
+    ],
+    "OrderNum_Year": 124,
+    "THIRTY_DAY_TOTAL_PASSRATE": null,
+    "quantity_EACHMONTH_YEAR": [
+      {
+        "YM": "2021-01",
+        "ta017sum": 0.74
+      },
+      {
+        "YM": "2021-02",
+        "ta017sum": 0.75
+      },
+      {
+        "YM": "2021-03",
+        "ta017sum": 0.80
+      },
+      {
+        "YM": "2021-04",
+        "ta017sum": 0.75
+      },
+      {
+        "YM": "2021-05",
+        "ta017sum": 0.79
+      },
+      {
+        "YM": "2021-06",
+        "ta017sum": 0.85
+      },
+      {
+        "YM": "2021-07",
+        "ta017sum": 0.87
+      },
+      {
+        "YM": "2021-08",
+        "ta017sum": 0.90
+      },
+      {
+        "YM": "2021-09",
+        "ta017sum": 0.91
+      },
+      {
+        "YM": "2021-10",
+        "ta017sum": 0.91
+      },
+      {
+        "YM": "2021-11",
+        "ta017sum": 0.91
+      },
+      {
+        "YM": "2021-12",
+        "ta017sum": 0.93
+      }
+    ],
+    "PASSRATE_EACHMONTH_YEAR": [
+      {
+        "YM": "2021-01",
+        "passrate": 0.94
+      },
+      {
+        "YM": "2021-02",
+        "passrate": 0.90
+      },
+      {
+        "YM": "2021-03",
+        "passrate": 0.91
+      },
+      {
+        "YM": "2021-04",
+        "passrate": 0.92
+      },
+      {
+        "YM": "2021-05",
+        "passrate": 0.89
+      },
+      {
+        "YM": "2021-06",
+        "passrate": 0.85
+      },
+      {
+        "YM": "2021-07",
+        "passrate": 0.90
+      },
+      {
+        "YM": "2021-08",
+        "passrate": 0.94
+      },
+      {
+        "YM": "2021-09",
+        "passrate": 0.95
+      },
+      {
+        "YM": "2021-10",
+        "passrate": 0.92
+      },
+      {
+        "YM": "2021-11",
+        "passrate": 0.92
+      },
+      {
+        "YM": "2021-12",
+        "passrate": 0.93
+      }
+    ],
+    "SEVEN_DAY_PASSRATE": [
+      {
+        "ayetg_tg011_sum": 0,
+        "ayeta_ta018_sum": 0,
+        "ayeta_ta014": "2021-01-05",
+        "qualified_rate": "0.95"
+      },
+      {
+        "ayetg_tg011_sum": 0,
+        "ayeta_ta018_sum": 0,
+        "ayeta_ta014": "2021-01-04",
+        "qualified_rate": "0.94"
+      },
+      {
+        "ayetg_tg011_sum": 0,
+        "ayeta_ta018_sum": 0,
+        "ayeta_ta014": "2021-01-03",
+        "qualified_rate": "0.92"
+      },
+      {
+        "ayetg_tg011_sum": 0,
+        "ayeta_ta018_sum": 0,
+        "ayeta_ta014": "2021-01-02",
+        "qualified_rate": "0.93"
+      },
+      {
+        "ayetg_tg011_sum": 0,
+        "ayeta_ta018_sum": 0,
+        "ayeta_ta014": "2021-01-01",
+        "qualified_rate": "0"
+      },
+      {
+        "ayetg_tg011_sum": 0,
+        "ayeta_ta018_sum": 0,
+        "ayeta_ta014": "2020-12-31",
+        "qualified_rate": "0"
+      },
+      {
+        "ayetg_tg011_sum": 0,
+        "ayeta_ta018_sum": 0,
+        "ayeta_ta014": "2020-12-30",
+        "qualified_rate": "0"
+      }
+    ],
+    "OrderNum_Year_SHOULD": 124
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "success": 1,
+  "msg": "操作成功",
+  "body": {
+    "totalCount": 15,
+    "list": [
+      {
+        "counts": "8",
+        "ayu_name": "张传颜",
+        "ayu_id": "1",
+        "ayu_number": "1",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "9",
+        "ayu_name": "卢淳高",
+        "ayu_id": "2",
+        "ayu_number": "2",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "10",
+        "ayu_name": "杜刚伟",
+        "ayu_id": "3",
+        "ayu_number": "3",
+        "workTime": 9,
+        "remark": "异常"
+      },
+      {
+        "counts": "8",
+        "ayu_name": "韦祖跃",
+        "ayu_id": "4",
+        "ayu_number": "4",
+        "workTime": 9,
+        "remark": "异常"
+      },
+      {
+        "counts": "7",
+        "ayu_name": "陈守真",
+        "ayu_id": "5",
+        "ayu_number": "5",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "8",
+        "ayu_name": "黄其江",
+        "ayu_id": "6",
+        "ayu_number": "6",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "11",
+        "ayu_name": "蒋洪其",
+        "ayu_id": "7",
+        "ayu_number": "7",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "8",
+        "ayu_name": "吴祝坚",
+        "ayu_id": "8",
+        "ayu_number": "8",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "9",
+        "ayu_name": "杜朝霞",
+        "ayu_id": "9",
+        "ayu_number": "9",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "7",
+        "ayu_name": "徐赛男",
+        "ayu_id": "10",
+        "ayu_number": "10",
+        "workTime": 9,
+        "remark": "异常"
+      },
+      {
+        "counts": "6",
+        "ayu_name": "吕秀芳",
+        "ayu_id": "11",
+        "ayu_number": "11",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "8",
+        "ayu_name": "黄其江",
+        "ayu_id": "12",
+        "ayu_number": "12",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "9",
+        "ayu_name": "郭美珍",
+        "ayu_id": "13",
+        "ayu_number": "13",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "10",
+        "ayu_name": "欧应举",
+        "ayu_id": "14",
+        "ayu_number": "14",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "8",
+        "ayu_name": "卢伟红",
+        "ayu_id": "15",
+        "ayu_number": "15",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "6",
+        "ayu_name": "郑芳",
+        "ayu_id": "16",
+        "ayu_number": "16",
+        "workTime": 9,
+        "remark": "异常"
+      },
+      {
+        "counts": "8",
+        "ayu_name": "张传芳",
+        "ayu_id": "17",
+        "ayu_number": "17",
+        "workTime": 7,
+        "remark": "异常"
+      },
+      {
+        "counts": "5",
+        "ayu_name": "陈丽英",
+        "ayu_id": "18",
+        "ayu_number": "18",
+        "workTime": 6,
+        "remark": "异常"
+      },
+      {
+        "counts": "10",
+        "ayu_name": "娄华",
+        "ayu_id": "19",
+        "ayu_number": "19",
+        "workTime": 10,
+        "remark": "异常"
+      },
+      {
+        "counts": "7",
+        "ayu_name": "应成贵",
+        "ayu_id": "20",
+        "ayu_number": "20",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "7",
+        "ayu_name": "卢伟玲",
+        "ayu_id": "21",
+        "ayu_number": "21",
+        "workTime": 7,
+        "remark": "异常"
+      },
+      {
+        "counts": "5",
+        "ayu_name": "金新海",
+        "ayu_id": "22",
+        "ayu_number": "22",
+        "workTime": 6,
+        "remark": "异常"
+      },
+      {
+        "counts": "6",
+        "ayu_name": "吴金亚",
+        "ayu_id": "23",
+        "ayu_number": "23",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "8",
+        "ayu_name": "杨德平",
+        "ayu_id": "24",
+        "ayu_number": "24",
+        "workTime": 9,
+        "remark": "异常"
+      },
+      {
+        "counts": "7",
+        "ayu_name": "陈兰姣",
+        "ayu_id": "25",
+        "ayu_number": "25",
+        "workTime": 7,
+        "remark": "异常"
+      },
+      {
+        "counts": "8",
+        "ayu_name": "周梅芳",
+        "ayu_id": "26",
+        "ayu_number": "26",
+        "workTime": 8,
+        "remark": "异常"
+      },
+      {
+        "counts": "9",
+        "ayu_name": "李罡",
+        "ayu_id": "27",
+        "ayu_number": "27",
+        "workTime": 9,
+        "remark": "异常"
+      },
+      {
+        "counts": "10",
+        "ayu_name": "阎良",
+        "ayu_id": "28",
+        "ayu_number": "28",
+        "workTime": 9,
+        "remark": "异常"
+      }
+   ]
+  }
+}

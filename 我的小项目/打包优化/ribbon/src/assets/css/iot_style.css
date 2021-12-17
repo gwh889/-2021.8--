@@ -1,0 +1,735 @@
+@charset "UTF-8";
+/* @import url(../../comment/font/font.css); */
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+input,
+div,
+table,
+th,
+td,
+span,
+a,
+i,
+img,
+ul,
+li {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+div {
+  word-break: break-all;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a,
+a:hover {
+  color: #263849;
+}
+
+.ivu-layout {
+  background: #f1f4f6;
+}
+
+.layout-con {
+  height: 100%;
+  width: 100%;
+}
+
+.main-content {
+  padding: 0 24px 16px;
+  /*no*/
+  flex: 1;
+}
+
+.main-content-box {
+  flex: 1;
+  position: relative;
+  overflow-y: auto;
+}
+
+*::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 4px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #2980b9;
+  background: #2980b9;
+}
+
+*::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px transparent;
+  border-radius: 0;
+  background: transparent;
+}
+
+.ivu-layout-header {
+  line-height: normal;
+  height: 50px;
+  /*no*/
+  padding: 0 24px;
+  /*no*/
+  display: flex;
+  justify-content: flex-end;
+  background: white;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.ivu-breadcrumb {
+  color: #9fa9c4;
+}
+
+.ivu-breadcrumb > span:last-child {
+  color: #9fa9c4;
+  font-weight: normal;
+}
+
+.ivu-breadcrumb a {
+  color: #9fa9c4;
+}
+
+.menu-item span {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+  transition: width 0.2s ease 0.2s;
+}
+
+.no-wrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-item i {
+  transform: translateX(0px);
+  transition: font-size 0.2s ease, transform 0.2s ease;
+  vertical-align: middle;
+  font-size: 16px;
+  /*no*/
+}
+
+.collapsed-menu span {
+  width: 0px;
+  transition: width 0.2s ease;
+}
+
+.collapsed-menu i {
+  transform: translateX(5px);
+  transition: font-size 0.2s ease 0.2s, transform 0.2s ease 0.2s;
+  vertical-align: middle;
+  font-size: 22px;
+  /*no*/
+}
+
+.collapsed-menu .ivu-menu-submenu-title-icon {
+  display: none;
+}
+
+.ivu-menu-submenu .ivu-menu-item {
+  padding-left: 39px !important;
+  /*no*/
+}
+
+.ivu-layout-sider-trigger {
+  position: absolute;
+}
+
+.ivu-layout-content {
+  width: 100%;
+  position: absolute;
+}
+
+.mainbody {
+  background: white;
+  box-shadow: 0px 1px 3px 0px rgba(63, 63, 68, 0.15), 0px 0px 0px 1px rgba(63, 63, 68, 0.05);
+  border-radius: 2px;
+  padding-bottom: 24px;
+}
+
+.mainheader {
+  background: #e4ebf1;
+  height: 52px;
+  border-radius: 2px 2px 0px 0px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  color: #314558;
+}
+
+.maincontent {
+  padding: 0 24px;
+}
+
+.main-search {
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-search .ivu-input-wrapper {
+  margin-left: 16px;
+  width: 240px;
+}
+
+.main-detail-heard {
+  background: #e4ebf1;
+}
+
+.main-detail-heard .main-mytitle {
+  padding: 16px 16px 24px 16px;
+  /*no*/
+  font-family: PingFang-block;
+  color: #333333;
+  font-weight: 600;
+}
+
+.ivu-tabs-bar {
+  margin-bottom: 0;
+  padding-left: 16px;
+  /*no*/
+}
+
+.ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab {
+  background: #d5e0e8;
+  border-radius: 2px 2px 0px 0px;
+  /*no*/
+  font-family: PingFang-block;
+  color: #333333;
+  border: 0;
+}
+
+.ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active {
+  background: #ffffff;
+  font-family: PingFang-block;
+  color: #333333;
+  border: 0;
+}
+
+.ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab {
+  padding: 9px 26px 7px 26px;
+  /*no*/
+  margin-right: 8px;
+  /*no*/
+}
+
+.ivu-tabs .ivu-tabs-tabpane {
+  background: #ffffff;
+  padding: 16px 24px 1px 24px;
+  font-family: PingFang-jian;
+  color: #263849;
+  font-size: 14px;
+  /*no*/
+}
+
+.ivu-tabs-content {
+  background: #ffffff;
+}
+
+.ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-nav-container {
+  height: 38px;
+}
+
+.ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab {
+  height: 38px;
+}
+
+.ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active {
+  height: 38px;
+}
+
+.ivu-btn, .ivu-btn-primary {
+  height: 36px;
+  /*no*/
+  padding: 0 26px;
+  /*no*/
+  border-radius: 2px;
+  border: 0;
+  font-size: 14px;
+  /*no*/
+}
+
+.ivu-btn-primary {
+  box-shadow: 0px 1px 0px 0px rgba(22, 29, 37, 0.1), 0px 1px 0px 1px rgba(255, 255, 255, 0.06);
+  background: #2980b9;
+  color: #ffffff;
+}
+
+.ivu-btn-primary:hover {
+  color: #fff;
+  background-color: #236fa1;
+  border-color: #236fa1;
+}
+
+.ivu-btn > span, .ivu-btn-primary > span {
+  vertical-align: initial;
+}
+
+.blue-text-btn {
+  color: #2980b9;
+}
+
+.blue-text-btn:hover span {
+  text-decoration: underline;
+}
+
+.primary-btn {
+  color: #fff;
+  background:rgba(41,128,185,1);
+  box-shadow:0px 1px 0px 0px rgba(22,29,37,0.1);
+  border-radius:2px;
+}
+
+.white-btn {
+  color: rgba(33,43,54,1);
+  background: linear-gradient(180deg, white 0%, #f9fafb 100%);
+  box-shadow: 0px 1px 0px 0px rgba(22, 29, 37, 0.05);
+  border-radius: 3px;
+  border: 1px solid #c4cdd5;
+}
+
+.ivu-input {
+  height: 36px;
+  /*no*/
+  font-size: 14px;
+  /*no*/
+}
+
+.ivu-input-prefix i,
+.ivu-input-suffix i {
+  font-size: 18px;
+  /*no*/
+  line-height: 36px;
+  /*no*/
+  color: #808695;
+}
+
+.ivu-select-multiple .ivu-select-input {
+  height: 36px;
+  /*no*/
+  line-height: 36px;
+  /*no*/
+}
+
+.ivu-page .ivu-page-item {
+  width: 40px;
+  /*no*/
+  height: 36px;
+  /*no*/
+  font-size: 14px;
+  /*no*/
+  line-height: 36px;
+  /*no*/
+}
+
+.ivu-page-options-elevator input {
+  height: 36px;
+  /*no*/
+  font-size: 14px;
+  /*no*/
+}
+
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+.ivu-select-single .ivu-select-selection .ivu-select-selected-value {
+  height: 36px;
+  /*no*/
+  font-size: 14px;
+  /*no*/
+  line-height: 36px;
+  /*no*/
+}
+
+.ivu-select-single .ivu-select-selection {
+  height: 36px;
+  /*no*/
+}
+
+.ivu-page-options-elevator {
+  height: 36px;
+  /*no*/
+  line-height: 36px;
+  /*no*/
+}
+
+.ivu-page-item-jump-next,
+.ivu-page-item-jump-prev,
+.ivu-page-next,
+.ivu-page-prev {
+  min-width: 36px;
+  /*no*/
+  height: 36px;
+  /*no*/
+  line-height: 34px;
+  /*no*/
+  margin-right: 0px;
+}
+
+.ivu-page-total {
+  height: 36px;
+  /*no*/
+  line-height: 36px;
+  /*no*/
+}
+
+.ivu-select {
+  color: #263849;
+}
+
+.main-page {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.ivu-input[disabled],
+fieldset[disabled] .ivu-input {
+  color: #263849;
+}
+
+.ivu-table-wrapper {
+  border: 0;
+}
+
+.ivu-table {
+  color: #263849;
+  font-size: 14px;
+  /*no*/
+}
+
+.ivu-table th {
+  background-color: #f7faff;
+  height: 56px;
+  /*no*/
+  font-family: PingFang-block;
+  color: #333333;
+}
+
+.ivu-table td,
+.ivu-table th {
+  border-bottom: 1px solid #dfe3e8;
+  /*no*/
+  height: 56px;
+  /*no*/
+}
+
+.ivu-table:after {
+  width: 0px;
+  /*no*/
+}
+
+.ivu-table .ivu-table-cell {
+  padding: 0 0 0 20px;
+}
+
+.ivu-modal-header p,
+.ivu-modal-header-inner {
+  font-size: 18px;
+  /*no*/
+  color: #263849;
+}
+
+.ivu-modal-body {
+  padding: 24px 32px;
+  /*no*/
+  font-size: 14px;
+  /*no*/
+}
+
+.ivu-modal-body .ivu-input {
+  background: linear-gradient(180deg, white 0%, #f9fafb 100%);
+  box-shadow: 0px 1px 0px 0px rgba(22, 29, 37, 0.05);
+  /*no*/
+  border-radius: 3px;
+  /*no*/
+  border: 1px solid #c4cdd5;
+  /*no*/
+}
+
+.ivu-modal-body .ivu-input[disabled],
+.ivu-modal-body fieldset[disabled] .ivu-input {
+  background: #f9fafb;
+}
+
+.ivu-modal-body textarea.ivu-input {
+  background: white;
+}
+
+.ivu-modal-body .ivu-radio-wrapper {
+  margin-right: 28px;
+  /*no*/
+}
+
+.ivu-modal-body .ivu-select-selection {
+  background: linear-gradient(180deg, white 0%, #f9fafb 100%);
+  box-shadow: 0px 1px 0px 0px rgba(22, 29, 37, 0.05);
+  border-radius: 3px;
+  border: 1px solid #c4cdd5;
+}
+
+.ivu-modal-footer .ivu-btn-text {
+  color: #263849;
+  background: linear-gradient(180deg, white 0%, #f9fafb 100%);
+  box-shadow: 0px 1px 0px 0px rgba(22, 29, 37, 0.05);
+  /*no*/
+  border-radius: 3px;
+  /*no*/
+  border: 1px solid #c4cdd5;
+  /*no*/
+}
+
+.ivu-form .ivu-form-item-label {
+  font-size: 14px;
+  /*no*/
+  font-family: PingFang-block;
+  color: #333333;
+}
+
+.ivu-radio-wrapper {
+  font-size: 14px;
+  /*no*/
+  font-family: PingFang-jian;
+  color: #263849;
+}
+
+.topic-header {
+  font-size: 14px;
+  /*no*/
+  font-family: PingFang-bold;
+  color: #263849;
+  line-height: 20px;
+  /*no*/
+  margin: 8px 0;
+  /*no*/
+}
+
+.ivu-form-item-content {
+  font-size: 14px;
+  /*no*/
+  font-family: PingFang-jian;
+  color: #263849;
+  line-height: 20px;
+  /*no*/
+}
+
+.ivu-radio-group-button .ivu-radio-wrapper {
+  background: linear-gradient(180deg, white 0%, #f9fafb 100%);
+  box-shadow: 0px 1px 0px 0px rgba(22, 29, 37, 0.05);
+  margin-right: 0;
+  height: 36px;
+  /*no*/
+  line-height: 36px;
+  /*no*/
+  font-size: 14px;
+  /*no*/
+}
+
+.ivu-radio-group-button .ivu-radio-wrapper-checked {
+  background: #2980b9;
+  color: #ffffff;
+  border-color: #2980b9;
+}
+
+.modal-tip {
+  width: 20px;
+  /*no*/
+  height: 20px;
+  /*no*/
+  margin-left: 12px;
+  /*no*/
+  top: 5px;
+  /*no*/
+  position: relative;
+  cursor: pointer;
+}
+
+.ivu-poptip-popper {
+  color: #7a8693;
+  font-size: 14px;
+}
+
+.ivu-alert {
+  font-size: 15px;
+  /*no*/
+}
+
+.ivu-alert-desc {
+  font-size: 15px;
+  /*no*/
+}
+
+.ivu-alert-warning {
+  background: #fcf1cd rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  /*no*/
+  border: 0;
+}
+
+.ivu-select-item {
+  font-size: 14px !important;
+  /*no*/
+}
+
+.ivu-menu-dark {
+  background: #161a24;
+}
+
+.ivu-layout-sider {
+  background: #161a24;
+}
+
+.ivu-layout-sider-trigger {
+  background: #161a24;
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened .ivu-menu-submenu-title {
+  background: #161a24;
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item {
+  background: #000000;
+}
+
+.menu-img {
+  width: 24px;
+  /*no*/
+  height: 24px;
+  /*no*/
+  display: inline-block;
+}
+
+.menu-kongzhi {
+  background-image: url(/static/images/menu/kongzhi.png);
+  left: 8px;
+}
+
+.menu-plat {
+  background-image: url(/static/images/menu/pingtai.png);
+}
+
+.menu-equman {
+  background-image: url(/static/images/menu/shebei.png);
+}
+
+.menu-analysis {
+  background-image: url(/static/images/menu/fenxi.png);
+}
+
+.menu-monitor {
+  background-image: url(/static/images/menu/yunwei.png);
+}
+
+.menu-operations {
+  background-image: url(/static/images/menu/yunying.png);
+}
+
+.menu-documents {
+  background-image: url("/static/images/menu/doc.png");
+}
+
+.menu-provider {
+  background-image: url("/static/images/menu/provider.png");
+}
+
+.menu-app {
+  background-image: url('/static/images/menu/app.png');
+}
+
+.menu-zutai {
+  background-image: url('/static/images/menu/zutai.png');
+}
+
+.menu-qiyeguanli {
+  background-image: url('/static/images/menu/qiyeguanl.png');
+}
+
+.menu-home-management {
+  background-image: url('/static/images/menu/homeManage.png');
+}
+.menu-system-management {
+  background-image: url('/static/images/menu/system.png');
+}
+
+.ivu-menu-submenu i.menu-min-img {
+  width: 5px;
+  /*no*/
+  height: 5px;
+  /*no*/
+  background: #ffffff;
+  margin-right: 17px;
+  /*no*/
+  display: inline-block;
+  border-radius: 5px;
+  /*no*/
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active,
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active:hover {
+  color: #fff;
+  background: #2980b9 !important;
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu),
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title-active:not(.ivu-menu-submenu) {
+  color: #fff;
+  background: #2980b9 !important;
+}
+
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item:hover,
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title:hover,
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item:hover {
+  color: #fff;
+  background: #2980b9 !important;
+}
+
+.collapsed-menu .ivu-menu-opened .ivu-menu {
+  display: none !important;
+}
+
+.ivu-menu-vertical .ivu-menu-item, .ivu-menu-vertical .ivu-menu-submenu-title {
+  padding: 10px 12px;
+}
+
+.maxformitem .ivu-form-item-content {
+  margin-left: 0 !important;
+}
+
+.ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active {
+  font-weight: bold;
+}

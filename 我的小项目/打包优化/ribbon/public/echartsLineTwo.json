@@ -1,0 +1,56 @@
+{
+  "success": 1,
+  "msg": "操作成功",
+  "body": {
+    "list": [
+      {
+        "rate": 98.12,
+        "monthName": "2020-01"
+      },
+      {
+        "rate": 100,
+        "monthName": "2020-02"
+      },
+      {
+        "rate": 100,
+        "monthName": "2020-03"
+      },
+      {
+        "rate": 98.34,
+        "monthName": "2020-04"
+      },
+      {
+        "rate": 97.12,
+        "monthName": "2020-05"
+      },
+      {
+        "rate": 96.33,
+        "monthName": "2020-06"
+      },
+      {
+        "rate": 100,
+        "monthName": "2020-07"
+      },
+      {
+        "rate": 98.78,
+        "monthName": "2020-08"
+      },
+      {
+        "rate": 93.99,
+        "monthName": "2020-09"
+      },
+      {
+        "rate": 92.99,
+        "monthName": "2020-10"
+      },
+      {
+        "rate": 100,
+        "monthName": "2020-11"
+      },
+      {
+        "rate": 97.76,
+        "monthName": "2020-12"
+      }
+    ]
+  }
+}
