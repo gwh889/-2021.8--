@@ -441,6 +441,113 @@ Array.from(new Array(9 + 1).keys()).slice(0)
 
 ### 1.迭代器
 
+​        迭代器是一种特殊对象，它具有一些专门为迭代过程设计的专有接口，所有的迭代器对象都有一个next()方法，每次调用都返回一个结果对象。结果对象有两个属性：一个是value，表示下一个将要返回的值；另一个是done，它是一个布尔类型的值，当没有更多可返回数据时返回true。迭代器还会保存一个内部指针，用来指向当前集合中值的位置，每调用一次next()方法，都会返回下一个可用的值
+
+　　如果在最后一个值返回后再调用next()方法，那么返回的对象中属性done的值为true，属性value则包含迭代器最终返回的值，这个返回值不是数据集的一部分，它与函数的返回值类似，是函数调用过程中最后一次给调用者传递信息的方法，如果没有相关数据则返回undefined
+
+迭代数据结构中的内容，一般用在数组、set/Map集合、类似数组对象、字符串，主要供for...of使用
+
+for...in只能遍历key值，还会遍历出原型的循环；而for...of可以遍历key,value
+
+```js
+//Symbol.iterator表示唯一的迭代器，诸如对象，一般不需要有顺序，所以对象本身没有迭代器 
+// 数组
+let arr = [11,22,33,44]
+console.log(arr);
+let iterator = arr[Symbol.iterator]()
+console.log(iterator.next());
+// set集合
+let set = new Set([1,2,3,4])
+let setIt=set[Symbol.iterator]()
+console.log(setIt.next());
+// Map集合
+let map = new Map([["id",1],["name","zhangsan"]])
+console.log(map);
+// 字符串
+let str="HelloWorld"
+let strIt=str[Symbol.iterator]()
+console.log(strIt.next());
+```
+
+### 2.生成器
+
+生成器是一种返回迭代器的函数，通过function关键字后的星号(*)来表示，函数中会用到新的关键字yield。星号可以紧挨着function关键字，也可以在中间添加一个空格
+
+#### 可解决异步（同时解决异步的还有promise和async）
+
+```js
+function * gen(){
+  console.log('生成器函数进入了');
+  yield console.log(1);
+  yield console.log(2)
+  yield console.log(3)
+  yield console.log(4)
+  yield console.log(5)
+  return 5
+}
+let it=this.gen()
+it.next() //1
+it.next() //2
+```
+
+#### 异步加载实例
+
+```js
+// 延时加载任务的作用
+function preLoad() {
+  console.log('显示进度动画')
+},
+function loadingData() {
+  let x = 0
+  let id = setInterval(() => {
+    console.log('加载数据中。。。' + ++x)
+    if (x == 20) {
+      clearInterval(id)
+      it.next({ msg: 200 })
+    }
+  }, 100)
+},
+function loaded() {
+  console.log('数据加载完毕，关闭动画')
+},
+function *loadData() {
+  preLoad()
+  let res = yield loadingData()
+  if (res.msg == 200) {
+    loaded()
+  }
+},
+ let it = loadData()
+ it.next() //显示进度动画  加载数据中。。。     数据加载完毕，关闭动画
+```
+
+#### yield返回值和传参
+
+```js
+function *test() {
+  let num = 10
+  let y = yield console.log(num + 10)
+  console.log('genY:' + y)
+  let z = yield console.log(y + 10)
+  console.log('genz:' + z)
+  return z
+}
+let it1 = test()
+it1.next() //20   genY:undefined  因为程序从右向左执行，一个yield只能执行等号右部分，没有赋值，下一个next才是给等号左侧的赋值
+it1.next(10) //20   genY:10    20
+it1.next(30) //20   genY:10    20  genz:30
+```
+
+#### 生成器函数调生成器函数
+
+```js
+function *test1(){
+      yield *test()
+}
+```
+
+
+
 ## **forEach不支持break**
 
 forEach并不支持break操作，使用break会导致报错。forEach跳出循环结合try catch操作。
