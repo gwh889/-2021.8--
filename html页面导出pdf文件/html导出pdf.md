@@ -6,11 +6,11 @@
 
 ### 页面效果：
 
-![image-20220223133544303](D:\mine\日常问题\html页面导出pdf文件\image-20220223133544303.png)
+![image-20220223133544303](D:\mine\北京数慧-评估区划系统-日常问题\html页面导出pdf文件\image-20220223133544303.png)
 
 ### 导出效果：
 
-![image-20220223133151270](D:\mine\日常问题\html页面导出pdf文件\image-20220223133151270.png)
+![image-20220223133151270](D:\mine\北京数慧-评估区划系统-日常问题\html页面导出pdf文件\image-20220223133151270.png)
 
 ## 使用技术
 
@@ -115,5 +115,77 @@ Vue.use(htmlToPdf)
 
 ```html
 <div @click="getPdf(codeName + '历史年度自然灾害评估结果')">下载</div>
+```
+
+## 下载奔溃的问题
+
+刚开始页面不是很长还可以，后面整个页面比较长，点击下载的时候直接浏览器奔溃，查资料发现是因为jspdf对canvans也是有最大限度的，太大就转不了啦。之后通过查找资料，决定采用模板的方式。就是前端写好一个导出的页面模板，样式也都写好，里边的表格数据通过后端自己查询通过拼接字符串的方式将数据放到表格里（就是只能用原生代码，不能使用组件），生成的echarts图标，通过转换成base64传给后端，后端再解析成图片插入；至于用到那些数据，需要把相关的接口和传参传给后端，实现后端的查询。
+
+```js
+//转换base64
+createBase64(ele) { //ele为传入的id
+  let docEle = ele + ' canvas'
+  let canvasFixed = document.querySelector(docEle) //获取图表元素
+  if (canvasFixed) {
+    let canvasWidth = canvasFixed.width, //获取图表元素宽度
+      canvasHeigth = canvasFixed.heigth, //获取图表元素高度,
+      canvas2D = canvasFixed.getContext('2d')
+    canvas2D.drawImage(canvasFixed, canvasWidth, canvasHeigth)
+    return canvasFixed.toDataURL()
+  } else {
+    return null
+  }
+},
+```
+
+## 一键置底
+
+element-ui只提供了一键置顶的功能，需要自己整个一键置底。
+
+```js
+<a class="toBottom" @click="goBottom">底</a>
+//一键置底的函数
+goBottom() {
+  // this.$refs.historyResultExamine_content.scrollTop = this.$refs.historyResultExamine_content.scrollHeight
+  //上下两种方式都可以
+  //.historyResultExamine_content为需要滚动的区域的类名
+  this.$nextTick(function () {
+    document.querySelector('.historyResultExamine_content').scrollTo({
+      top: document.querySelector('.historyResultExamine_content').scrollHeight,
+      behavior: 'smooth',
+    })
+  })
+},
+```
+
+同时想要实现向上滚动时显示一键置顶，向下滚动时显示一键置底，需要监听滚动条
+
+```js
+<a class="toBottom" v-show="scrollToBottom" @click="goBottom">底</a>
+<el-backtop style="background: #f2f5f6" target=".historyResultExamine_content" v-show="scrollToTop">顶</el-backtop>
+//需要事先定义好scrollToBottom、scrollToTop、oldScrollTop
+//在created中添加监听函数，可能不生效，需要将第三个参数写成true，捕获阶段触发
+window.addEventListener('scroll', this.scrolling, true)
+//methods
+scrolling() {
+  // 滚动条距文档顶部的距离
+  let scrollTop =
+    window.pageYOffset ||
+    document.querySelector('.historyResultExamine_content').scrollTop ||
+    document.body.scrollTop
+  // 滚动条滚动的距离
+  let scrollStep = scrollTop - this.oldScrollTop
+  // 更新——滚动前，滚动条距文档顶部的距离
+  this.oldScrollTop = scrollTop
+  if (scrollStep < 0) {
+    this.scrollToTop = true
+    this.scrollToBottom = false
+    console.log('滚动条向上滚动了！')
+  } else {
+    this.scrollToTop = false
+    this.scrollToBottom = true
+    console.log('滚动条向下滚动了！')
+  }
+},
 ```
 
