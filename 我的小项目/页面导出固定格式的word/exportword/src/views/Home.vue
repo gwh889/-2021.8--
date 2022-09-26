@@ -49,6 +49,217 @@
             </div>
           </div>
         </el-table>
+
+         <el-table
+          border
+          class="table_domQuote"
+          ref="tableDomQuote"
+          size="small"
+          :data="tableData"
+          style="width: 100%"
+        >
+          <el-table-column prop="number" width="80" label="序号" align="center"></el-table-column>
+          <el-table-column label="设备名称" prop="name" align="center"></el-table-column>
+          <el-table-column label="数量" prop="num" align="center"></el-table-column>
+          <el-table-column prop="salePrice" label="销售单价" align="center"></el-table-column>
+          <el-table-column prop="saleTotal" label="销售合计" align="center"></el-table-column>
+          <el-table-column label="备注" prop="remark" align="center"></el-table-column>
+          <div slot="append">
+            <div class="quoteTable">
+              <span class="quoteTable_sp1">合计：</span>
+              <span class="quoteTable_sp1">{{form.totalPrice}}</span>
+            </div>
+          </div>
+        </el-table>
+         <el-table
+          border
+          class="table_domQuote"
+          ref="tableDomQuote"
+          size="small"
+          :data="tableData"
+          style="width: 100%"
+        >
+          <el-table-column prop="number" width="80" label="序号" align="center"></el-table-column>
+          <el-table-column label="设备名称" prop="name" align="center"></el-table-column>
+          <el-table-column label="数量" prop="num" align="center"></el-table-column>
+          <el-table-column prop="salePrice" label="销售单价" align="center"></el-table-column>
+          <el-table-column prop="saleTotal" label="销售合计" align="center"></el-table-column>
+          <el-table-column label="备注" prop="remark" align="center"></el-table-column>
+          <div slot="append">
+            <div class="quoteTable">
+              <span class="quoteTable_sp1">合计：</span>
+              <span class="quoteTable_sp1">{{form.totalPrice}}</span>
+            </div>
+          </div>
+        </el-table>
+         <el-table
+          border
+          class="table_domQuote"
+          ref="tableDomQuote"
+          size="small"
+          :data="tableData"
+          style="width: 100%"
+        >
+          <el-table-column prop="number" width="80" label="序号" align="center"></el-table-column>
+          <el-table-column label="设备名称" prop="name" align="center"></el-table-column>
+          <el-table-column label="数量" prop="num" align="center"></el-table-column>
+          <el-table-column prop="salePrice" label="销售单价" align="center"></el-table-column>
+          <el-table-column prop="saleTotal" label="销售合计" align="center"></el-table-column>
+          <el-table-column label="备注" prop="remark" align="center"></el-table-column>
+          <div slot="append">
+            <div class="quoteTable">
+              <span class="quoteTable_sp1">合计：</span>
+              <span class="quoteTable_sp1">{{form.totalPrice}}</span>
+            </div>
+          </div>
+        </el-table>
+         <el-table
+          border
+          class="table_domQuote"
+          ref="tableDomQuote"
+          size="small"
+          :data="tableData"
+          style="width: 100%"
+        >
+          <el-table-column prop="number" width="80" label="序号" align="center"></el-table-column>
+          <el-table-column label="设备名称" prop="name" align="center"></el-table-column>
+          <el-table-column label="数量" prop="num" align="center"></el-table-column>
+          <el-table-column prop="salePrice" label="销售单价" align="center"></el-table-column>
+          <el-table-column prop="saleTotal" label="销售合计" align="center"></el-table-column>
+          <el-table-column label="备注" prop="remark" align="center"></el-table-column>
+          <div slot="append">
+            <div class="quoteTable">
+              <span class="quoteTable_sp1">合计：</span>
+              <span class="quoteTable_sp1">{{form.totalPrice}}</span>
+            </div>
+          </div>
+        </el-table>
+         <el-table
+          border
+          class="table_domQuote"
+          ref="tableDomQuote"
+          size="small"
+          :data="tableData"
+          style="width: 100%"
+        >
+          <el-table-column prop="number" width="80" label="序号" align="center"></el-table-column>
+          <el-table-column label="设备名称" prop="name" align="center"></el-table-column>
+          <el-table-column label="数量" prop="num" align="center"></el-table-column>
+          <el-table-column prop="salePrice" label="销售单价" align="center"></el-table-column>
+          <el-table-column prop="saleTotal" label="销售合计" align="center"></el-table-column>
+          <el-table-column label="备注" prop="remark" align="center"></el-table-column>
+          <div slot="append">
+            <div class="quoteTable">
+              <span class="quoteTable_sp1">合计：</span>
+              <span class="quoteTable_sp1">{{form.totalPrice}}</span>
+            </div>
+          </div>
+        </el-table>
+         <el-table
+          border
+          class="table_domQuote"
+          ref="tableDomQuote"
+          size="small"
+          :data="tableData"
+          style="width: 100%"
+        >
+          <el-table-column prop="number" width="80" label="序号" align="center"></el-table-column>
+          <el-table-column label="设备名称" prop="name" align="center"></el-table-column>
+          <el-table-column label="数量" prop="num" align="center"></el-table-column>
+          <el-table-column prop="salePrice" label="销售单价" align="center"></el-table-column>
+          <el-table-column prop="saleTotal" label="销售合计" align="center"></el-table-column>
+          <el-table-column label="备注" prop="remark" align="center"></el-table-column>
+          <div slot="append">
+            <div class="quoteTable">
+              <span class="quoteTable_sp1">合计：</span>
+              <span class="quoteTable_sp1">{{form.totalPrice}}</span>
+            </div>
+          </div>
+        </el-table>
+         <el-table
+          border
+          class="table_domQuote"
+          ref="tableDomQuote"
+          size="small"
+          :data="tableData"
+          style="width: 100%"
+        >
+          <el-table-column prop="number" width="80" label="序号" align="center"></el-table-column>
+          <el-table-column label="设备名称" prop="name" align="center"></el-table-column>
+          <el-table-column label="数量" prop="num" align="center"></el-table-column>
+          <el-table-column prop="salePrice" label="销售单价" align="center"></el-table-column>
+          <el-table-column prop="saleTotal" label="销售合计" align="center"></el-table-column>
+          <el-table-column label="备注" prop="remark" align="center"></el-table-column>
+          <div slot="append">
+            <div class="quoteTable">
+              <span class="quoteTable_sp1">合计：</span>
+              <span class="quoteTable_sp1">{{form.totalPrice}}</span>
+            </div>
+          </div>
+        </el-table>
+         <el-table
+          border
+          class="table_domQuote"
+          ref="tableDomQuote"
+          size="small"
+          :data="tableData"
+          style="width: 100%"
+        >
+          <el-table-column prop="number" width="80" label="序号" align="center"></el-table-column>
+          <el-table-column label="设备名称" prop="name" align="center"></el-table-column>
+          <el-table-column label="数量" prop="num" align="center"></el-table-column>
+          <el-table-column prop="salePrice" label="销售单价" align="center"></el-table-column>
+          <el-table-column prop="saleTotal" label="销售合计" align="center"></el-table-column>
+          <el-table-column label="备注" prop="remark" align="center"></el-table-column>
+          <div slot="append">
+            <div class="quoteTable">
+              <span class="quoteTable_sp1">合计：</span>
+              <span class="quoteTable_sp1">{{form.totalPrice}}</span>
+            </div>
+          </div>
+        </el-table>
+         <el-table
+          border
+          class="table_domQuote"
+          ref="tableDomQuote"
+          size="small"
+          :data="tableData"
+          style="width: 100%"
+        >
+          <el-table-column prop="number" width="80" label="序号" align="center"></el-table-column>
+          <el-table-column label="设备名称" prop="name" align="center"></el-table-column>
+          <el-table-column label="数量" prop="num" align="center"></el-table-column>
+          <el-table-column prop="salePrice" label="销售单价" align="center"></el-table-column>
+          <el-table-column prop="saleTotal" label="销售合计" align="center"></el-table-column>
+          <el-table-column label="备注" prop="remark" align="center"></el-table-column>
+          <div slot="append">
+            <div class="quoteTable">
+              <span class="quoteTable_sp1">合计：</span>
+              <span class="quoteTable_sp1">{{form.totalPrice}}</span>
+            </div>
+          </div>
+        </el-table>
+         <el-table
+          border
+          class="table_domQuote"
+          ref="tableDomQuote"
+          size="small"
+          :data="tableData"
+          style="width: 100%"
+        >
+          <el-table-column prop="number" width="80" label="序号" align="center"></el-table-column>
+          <el-table-column label="设备名称" prop="name" align="center"></el-table-column>
+          <el-table-column label="数量" prop="num" align="center"></el-table-column>
+          <el-table-column prop="salePrice" label="销售单价" align="center"></el-table-column>
+          <el-table-column prop="saleTotal" label="销售合计" align="center"></el-table-column>
+          <el-table-column label="备注" prop="remark" align="center"></el-table-column>
+          <div slot="append">
+            <div class="quoteTable">
+              <span class="quoteTable_sp1">合计：</span>
+              <span class="quoteTable_sp1">{{form.totalPrice}}</span>
+            </div>
+          </div>
+        </el-table>
       </div>
     </div>
     <!-- 审核备注容器 -->
@@ -119,6 +330,7 @@ export default {
       let _this = this;
       // 读取并获得模板文件的二进制内容
       JSZipUtils.getBinaryContent("input.docx", function(error, content) {
+        console.log(content);
         // input.docx是模板。我们在导出的时候，会根据此模板来导出对应的数据
         // 抛出异常
         if (error) {
