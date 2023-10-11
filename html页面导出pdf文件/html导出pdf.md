@@ -56,7 +56,7 @@ export default {
             //   console.log(x);
             html2Canvas(document.querySelector('.historyResultExamine_content'), {
                 allowTaint: true, //避免一些不识别的图片干扰，默认为false，遇到不识别的图片干扰会停止处理html2Canvas
-                useCORS:true //允许canvas画布内可以跨域请求外部图片
+                useCORS:true //允许canvas画布内可以跨域请求外部图片，如果是地图服务上的图，需要在上图的时候设置允许跨域，crossOrigin: 'anonymous',
             }).then(function (canvas) {
                 // canvas渲染完成之后将样式恢复到原始高度
                 $('.historyResultExamine_content').css('height', '80vh')
